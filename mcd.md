@@ -15,4 +15,5 @@
 - id_ref_produit (FK → produits)
 - id_magasin (FK → magasins)
 - quantite
-![MCD](./mcd.png)
+
+**![MCD](./mcd.png)**
