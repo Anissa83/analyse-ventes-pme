@@ -25,7 +25,6 @@
 - Produit B : 10.2%
 - Produit C : 8.5%
 
-👉 Voir le graphique "Camembert du chiffre d'affaires"
 
 ---
 
@@ -43,14 +42,14 @@ Produit E : 439.89 €
 
 Produit A : 299.94 €
 
-🔥 Produits les plus performants localement :
+Produits les plus performants localement :
 Produit E cartonne à Lyon, Nantes, Marseille, Lille
 
 Produit D est aussi très fort à Lyon, Bordeaux, Paris
 
 Produit A est vendu un peu partout, mais à des niveaux plus variables
 
-👉 Voir le graphique "Barres groupées produit/ville"
+
 
 ---
 
@@ -76,9 +75,7 @@ Il est recommandé de renforcer les stocks et augmenter la visibilité commercia
 Relancer les zones à faible CA
 Des villes comme Lille, Strasbourg, Marseille (pour certains produits) ont des CA relativement plus bas.
 Il est conseillé de mener des campagnes d’activation locales, ou de revoir la stratégie de vente dans ces zones.
----
 
-📂 Pour tous les visuels détaillés, consulter le notebook : **PME_sql_pipeline.ipynb**
 
 
 

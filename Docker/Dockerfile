@@ -12,7 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY Script/ ./Script
 
 # Copier les fichiers CSV
-COPY Donnés brief data engineer - *.csv ./
+COPY "Donnés brief data engineer - produits.csv" ./
+COPY "Donnés brief data engineer - magasins.csv" ./
+COPY "Donnés brief data engineer - ventes.csv" ./
 
 # Copier la base de données SQLite si elle existe (ou elle sera créée)
 COPY pme_ventes.db ./

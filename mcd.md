@@ -12,8 +12,8 @@
 **ventes**
 - id_vente (PK)
 - date
-- id_ref_produit (FK → produits)
-- id_magasin (FK → magasins)
+- id_ref_produit (FK -> produits)
+- id_magasin (FK -> magasins)
 - quantite
 
 **![MCD](./mcd.png)**

@@ -5,12 +5,12 @@ import pandas as pd
 conn = sqlite3.connect("pme_ventes.db")
 cursor = conn.cursor()
 
-# 🔁 Réinitialisation des tables pour test/démo (en phase dev)
+# Réinitialisation des tables pour test/démo (en phase dev)
 cursor.execute("DROP TABLE IF EXISTS produits")
 cursor.execute("DROP TABLE IF EXISTS magasins")
 cursor.execute("DROP TABLE IF EXISTS ventes")
 
-# 🔧 Création des tables
+# Création des tables
 cursor.execute("""
 CREATE TABLE produits (
     id_ref_produit TEXT PRIMARY KEY,
@@ -39,7 +39,7 @@ CREATE TABLE ventes (
 """)
 conn.commit()
 
-# 🧾 Chargement et préparation des CSV
+# Chargement et préparation des CSV
 
 # Produits
 produits = pd.read_csv("Donnés brief data engineer - produits.csv")
@@ -68,7 +68,7 @@ ventes.rename(columns={
 }, inplace=True)
 ventes = ventes[["date", "id_ref_produit", "quantite", "id_magasin"]]
 
-# 📥 Insertion des données
+#  Insertion des données
 produits.to_sql("produits", conn, if_exists="append", index=False)
 magasins.to_sql("magasins", conn, if_exists="append", index=False)
 ventes.to_sql("ventes", conn, if_exists="append", index=False)
