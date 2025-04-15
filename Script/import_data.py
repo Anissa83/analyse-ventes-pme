@@ -15,14 +15,16 @@ cursor.execute("""
 CREATE TABLE produits (
     id_ref_produit TEXT PRIMARY KEY,
     nom TEXT,
-    prix REAL
+    prix REAL,
+    stock INTEGER           
 )
 """)
 
 cursor.execute("""
 CREATE TABLE magasins (
     id_magasin INTEGER PRIMARY KEY,
-    ville TEXT
+    ville TEXT,
+    nb_salaries INTEGER            
 )
 """)
 
